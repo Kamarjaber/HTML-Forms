@@ -32,6 +32,22 @@
       <p id="text">Bestätigen Sie bitte ihre Daten</p>
     <button type="button"onclick="document.getElementById('text').innerHTML='Daten stimmen nicht überein'">Senden</button>
       
+    <p>IF Condition Example</p>
+    <p id="Hu"></p>
 
+    <input type="text" placeholder="Enter Your Name" id="name">
+
+    <button onclick="document.getElementById('result').innerHTML='Hello' + document.getElementById('name').value"> Click me</button>
+    <p id="result"></p>
 </body>
+<script>
+    if (new Date().getHours() < 16 )
+     {
+         document.getElementById('Hu').innerHTML = "Good Morning"
+     }
+     else
+     {
+        document.getElementById('Hu').innerHTML = "Good Aftermonn"
+     }
+</script>
 </html>
