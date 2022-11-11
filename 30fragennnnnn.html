@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <p id="Hello"></p>
+    <input type="text" placeholder="Enter Your Name" id="name" value="">
+    <button onclick="clicker()"> Click me to see the function</button>
+    <button onclick=" lauguage()">lauguage</button>
+</body>
+<script>
+    function lauguage()
+    {
+    document.getElementById('result').innerHTML == "Deutsch"
+    }
+    function clicker()
+        {
+            if(document.getElementById('name').value == "Wie geht es dir ?") 
+        {
+            document.getElementById('Hello').innerHTML = "Mir geht es gut, danke"
+        }
+         else if(document.getElementById('name').value == "Wie heißt du ?" ||
+         document.getElementById('name').value == "Wie heißt du " ||
+         document.getElementById('name').value == "wie heißt du ?" ||
+         document.getElementById('name').value == "wie heißt du " ||
+         document.getElementById('name').value == "ie Heißt du ")
+        {
+            document.getElementById('Hello').innerHTML = "Ich heiße Nour"
+        }
+        else if(document.getElementById('name').value == "Wie alt bist du ?" ||
+        document.getElementById('name').value == "Wie alt bist du ? ")
+        {
+            document.getElementById('Hello').innerHTML = "Ich bin 16 jahre alt"
+        }
+        else if(document.getElementById('name').value == "Was idt dein Hobby ?")
+        {
+          document.getElementById('Hello').innerHTML = "Mein Hobby ist schwimmen, Fahrrad fahren ..."
+        }
+        else if(document.getElementById('name').value == "Wo wohnst du ?")
+        {
+            document.getElementById('Hello').innerHTML = "Ich wohne in Schleswig-Holstein"
+        }
+        else if(document.getElementById('name').value == "Was ist dein Liblingsfarbe ? ")
+        {
+            document.getElementById('Hello').innerHTML = "Mein Liblingsfarbe ist grün"
+        }
+        else if(document.getElementById('name').value == "Hast du Geschwister ?")
+        {
+            document.getElementById('Hello').innerHTML = "Ja, ich habe vier Geschwister"
+        }
+        else if(document.getElementById('name').value == "Wann hast du Geburtstag ?")
+        {
+            document.getElementById('Hello').innerHTML = " Ich habe am 08.11.2005"
+        }
+        else if(document.getElementById('name').value == "Gehst du zur schule ?")
+        {
+            document.getElementById('Hello').innerHTML = " Ja ich gehe zur schule"
+        }
+        else if(document.getElementById('name').value ==" In welche klasse bist du ?")
+        {
+            document.getElementById('Hello').innerHTML = " Ich bin in der 10.Klasse"
+        }
+        else if(document.getElementById('name').value == "Wie lang bist du ?")
+        {
+            document.getElementById('Hello').innerHTML = "Ich bin 168cm lang"
+        }
+        else if(document.getElementById('name').value == "Was trinkst du am meinsten ?")
+        {
+            document.getElementById('Hello').innerHTML = "Am meinsten trinke ich Wasser"
+        }
+        else if(document.getElementById('name').value == "Was ist deine Religion ?")
+        {
+            document.getElementById('Hello').innerHTML = "Meine Religion ist der Islam"
+        }
+        else if(document.getElementById('name').value == "Wo her kommst du ?")
+        {
+            document.getElementById('Hello').innerHTML = "Ich Komme aus Syrien" 
+        }
+        else if(document.getElementById('name').value == "Wie viele Srachen kannst du sprechen ?" )
+        {
+            document.getElementById('Hello').innerHTML = "Ich kann vier sprachen" 
+        }
+        else if(document.getElementById('name').value == "Welche sprachen kannst du sprechen ?")
+        {
+            document.getElementById('Hello').innerHTML = "Ich kann Deutsch, Arabisch, Englisch und Französisch" 
+        }
+        else if(document.getElementById('name').value == "Welcher schulfach magst du am meinsten ?")
+        {
+            document.getElementById('Hello').innerHTML = "Ich mag Mathe, Physik, Chemie und Bio" 
+        }
+        else if(document.getElementById('name').value == "Wie viele länder hast du schon mal besucht ?")
+        {
+            document.getElementById('Hello').innerHTML = "Ich habe bis jetz nur 7 Länder besucht" 
+        }
+        else if(document.getElementById('name').value == "Warst du schon man auf Klassenfahrt ?")
+        {
+            document.getElementById('Hello').innerHTML = "Ja ich war schon 3-mal auf Klassenfahrt" 
+        }
+        else if(document.getElementById('name').value == "Lieblings Auto marke ?" )
+        {
+            document.getElementById('Hello').innerHTML = "Mercedes" 
+        }
+       else
+       {
+        document.getElementById('Hello').innerHTML = "Hello" + document.getElementById('name').value
+       }
+        }
+    </script>
+</html>
